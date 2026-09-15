@@ -6,10 +6,10 @@ nama_barang = input("Masukkan nama barang: ")
 harga_barang = float(input("Masukkan harga barang: Rp"))
 jumlah_barang = int(input("Masukkan jumlah barang: "))
 
-# 3. Hitung subtotal
+
 subtotal = harga_barang * jumlah_barang
 
-# 4, 5, 6, 7. Menentukan diskon
+
 if subtotal >= 1000000:
     diskon = 42
 elif subtotal >= 500000:
@@ -25,13 +25,13 @@ potongan = subtotal * diskon / 100
 # Menghitung total bayar
 total_bayar = subtotal - potongan
 
-# 8. Status pembayaran
+
 if total_bayar >= 500000:
     status = "Pembayaran memenuhi syarat"
 else:
     status = "Pembayaran di bawah Rp500.000"
 
-# 9. Menampilkan ringkasan transaksi
+
 print("\n======================================")
 print("        DETAIL TRANSAKSI")
 print("======================================")
